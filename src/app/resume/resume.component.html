@@ -1,0 +1,58 @@
+<div class="container">
+  <h1>RESUME</h1>
+  <hr>
+  <div class="col-md-4">
+  <h2>Download Resume</h2>
+  <a href="https://www.docdroid.net/wejWM1B/resume.pdf.html" class="btn btn-default">Download Resume(.pdf file)</a>
+  </div>
+  <div style="margin-top:20px;" class="col-md-8 text-center">
+    <ul class="nav nav-pills">
+      <li><a (click)="per()" class="btn btn-default tip">
+        <i class="fa fa-home fa-3x" aria-hidden="true"></i>
+        <span class="tool">Personal Details</span></a></li>
+      <li><a (click)="eduD()" class="btn btn-default tip">
+        <i class="fa fa-university fa-3x" aria-hidden="true"></i>
+        <span class="tool">Educational Profile</span></a></li>
+      <li><a (click)="expD()" class="btn btn-default tip">
+        <i class="fa fa-briefcase fa-3x" aria-hidden="true"></i>
+        <span class="tool">Experience Details</span></a></li>
+      <li><a (click)="pLoc()" class="btn btn-default tip">
+        <i class="fa fa-location-arrow fa-3x" aria-hidden="true"></i>
+        <span class="tool">Present Location</span></a></li>
+      <li><a (click)="conM()" class="btn btn-default tip">
+        <i class="fa fa-comments fa-3x" aria-hidden="true"></i>
+        <span class="tool">Contact Me</span></a></li>
+    </ul>
+  <div *ngIf="check" class="personalDetails reveal-text text-center">
+      <h2>PERSONAL DETAILS</h2>
+      <h4>NAME: ATHARVA PANDEY</h4>
+      <h4>AGE: 23 YEARS</h4>
+      <h4>EXPERIENCE: 1 + YEARS TILL DATE</h4>
+  </div>
+  <div *ngIf="edu" class="educationalProfile reveal-text text-center">
+    <h2>EDUCATIONAL PROFILE</h2>
+    <h4>TECHINICAL: B.E. ( COMPUTER SCIENCE )</h4>
+    <h4>SKILLS: HTML, CSS , JAVA, JQUERY, ANGULAR 2 etc.</h4>
+    <h4>SOFTWARES: PHOTOSHOP, ECLIPSE IDE, VSCODE ETC.</h4>
+    <h4>VERSION CONTROL: GIT, SVN</h4>
+    <h4>OS: WINDOWS, UBUNTU, MAC OS</h4>
+  </div>
+    <div *ngIf="exp" class="experienceDetails reveal-text text-center">
+      <h2>EXPERIENCE DETAILS</h2>
+      <h4>CGI: 2016 - TILL DATE AS ASSOCIATE SOFTWARE ENGINEER</h4>
+    </div>
+    <div *ngIf="loc" class="presentLocation reveal-text text-center">
+      <h2>PRESENT LOCATION</h2>
+      <h4>LOCALITY D-2101 MANTRI CELESTIA, FINANCIAL DISTRICT</h4>
+      <h4>COUNTRY INDIA</h4>
+      <h4>PIN 500032</h4>
+    </div>
+    <div *ngIf="con" class="contactMe reveal-text text-center">
+      <h2>CONTACT ME</h2>
+      <h4>EMAIL atharvajava@gmail.com</h4>
+      <h4>CALL +91-8142-777-088</h4>
+      <h4>SKYPE atharvpandey@outlook.com</h4>
+    </div>
+    <a id="downp" style="margin-top:50px;margin-right:150px;" href="#portfolio" class="btn btn-default"><i class="fa fa-caret-square-o-down fa-2x" aria-hidden="true"></i></a>
+  </div>
+</div>

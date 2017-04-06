@@ -1,0 +1,27 @@
+#my-Image{
+	height: 100vh;
+    width:75vh;
+    margin-left:-120px;
+    background-size:cover;
+    position:absolute;
+}
+#down{
+    margin-left:130px;
+    border-radius:100%;
+    border:none;
+}
+#my-content{
+    margin-top:100px;
+    margin-left:-100px;
+}
+.well{
+    background-color: white;
+    border:none;
+    margin-left:500px;
+    box-shadow: none;
+}
+#heading{
+    color:darkkhaki;
+    margin-left:-300px;
+    font-size:20vh;
+}

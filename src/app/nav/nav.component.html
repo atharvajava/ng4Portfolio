@@ -1,0 +1,44 @@
+<div id="wrapper">
+        <!-- Sidebar -->
+         <button *ngIf="check" class="btn btn-default" id="menu-toggle" (mouseenter)="toggle()">
+          <i class="navicon fa fa-bars fa-2x" aria-hidden="true"></i></button>
+        <div id="sidebar-wrapper" (mouseleave)="toggleLeave()">
+            <ul class="sidebar-nav nav" >
+                <li class="sidebar-brand">
+                    <h1 class="logo text-center">AP</h1>
+                </li>
+                <li style="margin-top: 100px;">
+                    <a href="#wrapper"><i class="fa fa-home fa-3x" aria-hidden="true"></i>&nbsp;&nbsp;Home</a>
+                </li>
+                <li>
+                    <a href="#about"><i class="fa fa-user-circle-o fa-3x" aria-hidden="true"></i>&nbsp;&nbsp;About</a>
+                </li>
+                <li>
+                    <a href="#resume"><i class="fa fa-bar-chart fa-3x" aria-hidden="true"></i>&nbsp;Resume</a>
+                </li>
+                <li>
+                    <a href="#portfolio"><i class="fa fa-laptop fa-3x" aria-hidden="true"></i>&nbsp;&nbsp;Portfolio</a>
+                </li>
+                <li>
+                    <a href="#hireme"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Hire Me</a>
+                </li>
+                <li>
+                    <a href="#contact"><i class="fa fa-address-card fa-3x" aria-hidden="true"></i>&nbsp;&nbsp;Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div>
+                            <section id="home"><home></home></section>
+                            <section id="about" ><about></about></section>
+                            <section id="resume"><resume></resume></section>
+                            <section id="portfolio"><portfolio></portfolio></section>
+                            <section id="hireme"><hireme></hireme></section>
+                            <footer id="contact"><contact></contact></footer>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>

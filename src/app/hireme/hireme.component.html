@@ -1,0 +1,35 @@
+<div class="container">
+<h1>HIRE ME</h1>
+<h2 class="heading">Contact me via message</h2>
+ <div class="contact-forms well">
+<!-- FORM LOGIC -->		              
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<form #contactForm="ngForm" (ngSubmit)="contact(contactForm.value)" autocomplete="off" >
+	<div class="form-group">
+		<label>Name :</label>&nbsp;&nbsp;<em *ngIf="contactForm.controls.name?.invalid
+		&& (contactForm.controls.name?.touched|| mouseoverSend)">Required</em>
+		<input (ngModel)="name" name="name" type="text" placeholder="Your Name" class="form-control" [ngClass]="{'redBorder': contactForm.controls.name?.invalid
+		&& (contactForm.controls.name?.touched||mouseoverSend)}" required /><br>
+		<label>Email :</label>&nbsp;&nbsp;&nbsp;<em *ngIf="contactForm.controls.email?.invalid
+		&& (contactForm.controls.email?.touched||mouseoverSend)">Required</em>
+		<input (ngModel)="email" name="email" type="text" placeholder="Email Address" class="form-control"  
+		required [pattern]="pattern" [ngClass]="{'redBorder': contactForm.controls.email?.invalid
+		&& (contactForm.controls.email?.touched||mouseoverSend)}"/><br>
+		<label>Subject :</label><em *ngIf="contactForm.controls.subject?.invalid
+		&& (contactForm.controls.subject?.touched||mouseoverSend)">Required</em>
+		<input (ngModel)="subject" name="subject" type="text" placeholder="Subject" class="form-control" required [ngClass]="{'redBorder': contactForm.controls.subject?.invalid
+		&& (contactForm.controls.subject?.touched||mouseoverSend)}"/><br>
+		<textarea (ngModel)="message" name="message" placeholder="Message" class="form-control" required [ngClass]="{'redBorder': contactForm.controls.message?.invalid
+		&& (contactForm.controls.message?.touched||mouseoverSend)}"></textarea><br>
+		<span (mouseenter)="mouseoverSend=true" (mouseleave)="mouseoverSend=false">
+		<button [disabled]="contactForm.invalid" id=send class="btn btn-default" type="submit"><h4>Send</h4></button>
+		</span>
+	</div>
+	</form>
+ </div> 
+</div>
+<!--FORM END-->
+
+</div>
+</div>
