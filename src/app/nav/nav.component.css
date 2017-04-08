@@ -32,7 +32,7 @@ body {
     margin-left:20px;
     z-index: 100;
     position: fixed;
-    color:lightgrey;
+    color:gold;
 }
 #sidebar-wrapper {
     z-index: 1000;
@@ -142,7 +142,13 @@ body {
     }
 }
 
+
 section {
   min-height: 100vh;
 }
 
+@media(max-width:480px){
+li{
+    margin-bottom:-10px;
+}
+}

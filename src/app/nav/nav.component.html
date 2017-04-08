@@ -2,7 +2,7 @@
         <!-- Sidebar -->
          <button *ngIf="check" class="btn btn-default" id="menu-toggle" (swiperight)="toggle()" (mouseenter)="toggle()">
           <i class="navicon fa fa-bars fa-2x" aria-hidden="true"></i></button>
-        <div id="sidebar-wrapper" (swipeleft)="toggleLeave()" (mouseleave)="toggleLeave()">
+        <div id="sidebar-wrapper" (tap)="toggleLeave()" (swipeleft)="toggleLeave()" (mouseleave)="toggleLeave()">
             <ul class="sidebar-nav nav" >
                 <li class="sidebar-brand">
                     <h1 class="logo text-center">AP</h1>
