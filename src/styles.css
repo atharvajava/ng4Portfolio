@@ -2,6 +2,12 @@
 body{
     font-family: 'ABeeZee', sans-serif;
     /*background-color: lightgreen;*/
+    overflow-x:hidden;
+}
+@media screen and (max-width: 320px){
+    body{
+        overflow-y:hidden;
+    }
 }
 canvas{
     position: fixed;

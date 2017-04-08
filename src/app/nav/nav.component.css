@@ -49,9 +49,6 @@ body {
     transition: all 0.5s ease;
     overflow-x: hidden;
 }
-i{
-padding-left: 16px;
-}
 
 #wrapper.toggled #sidebar-wrapper {
     width: 250px;

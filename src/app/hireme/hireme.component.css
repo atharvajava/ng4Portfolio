@@ -1,6 +1,11 @@
 h1{
     font-size:20vh;
+    font-size:10vw;
+    margin-left:20px;
     color:darkviolet;
+}
+h2{
+    margin-left:20px;
 }
 /*=====form====*/
 .redBorder{
@@ -17,13 +22,13 @@ em{
 input{
     margin-top:10px;
     height:6vh;
-    width:22vw;
+    width:20rem;
     border-radius:5px;
 }
 textarea{
     margin-top:10px;
     height:20vh;
-    width:60vw;
+    width:75vw;
     border-radius: 5px;
 }
 .well{

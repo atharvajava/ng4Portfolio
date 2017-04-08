@@ -6,6 +6,10 @@
   font-size: 16px;
   padding: 50px;
   margin-top: 50px;
+  color:white;
+  background-size:cover;
+  position:absolute;
+  margin-left:-20px; 
 }
 
 .footer .footer-left,
@@ -144,4 +148,8 @@
   .footer .footer-center i {
     margin-left: 0;
   }
+}
+
+.colorSetup{
+  background-color:black;  
 }

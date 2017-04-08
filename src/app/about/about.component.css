@@ -1,18 +1,54 @@
-#my-Image{
-	height: 100vh;
-    width:75vh;
-    margin-left:-120px;
-    background-size:cover;
-    position:absolute;
-}
-#down{
-    margin-left:130px;
-    border-radius:100%;
+/*Images Setting Responsive Design Logic*/
+@media screen and (max-width: 320px){
+      
+    #my-Image{
+        margin-top:22vh;
+        height:50vh;
+        min-width:100vw;
+        margin-left:-30px;
+        margin-top:0px;
+        background-size:cover;
+        position:absolute;    
+        content:url("http://i.imgur.com/W5ZhqWr.jpg?1");
+    } 
+    #heading{
+        font-size:20vh;
+        font-size:10vw;
+        text-align: center;
+        color:darkkhaki;
+    }
+    .container{
+        padding-left: 0;
+        padding-right: 0;
+        margin:0;
+    }
+    .well{
+    background-color: white;
     border:none;
+    margin-top:43vh;
+    box-shadow: none;
 }
-#my-content{
-    margin-top:100px;
-    margin-left:-100px;
+}
+
+@media screen and (min-width: 320px) {      
+    #my-Image{
+               
+       content:url("http://i.imgur.com/W5ZhqWr.jpg?1");
+     } 
+} 
+@media (min-width: 992px){      
+      #my-Image{
+        height: 100vh;
+        width:75vh;
+        margin-left:-120px;
+        background-size:cover;
+        position:absolute;        
+        content:url("https://preview.ibb.co/hNUY8v/16508521_10209976061531635_6824701656390164629_n.jpg");  
+      } 
+      #heading{
+        color:darkkhaki;
+        margin-left:-300px;
+        font-size:20vh;
 }
 .well{
     background-color: white;
@@ -20,8 +56,44 @@
     margin-left:500px;
     box-shadow: none;
 }
-#heading{
+#my-content{
+    margin-top:100px;
+    margin-left:-100px;
+}
+}
+@media (min-width: 1200px) {    
+     #my-Image{ 
+         height: 100vh;
+    width:75vh;
+    margin-left:-120px;
+    background-size:cover;
+    position:absolute;        
+         content:url("https://preview.ibb.co/hNUY8v/16508521_10209976061531635_6824701656390164629_n.jpg");   
+     } 
+     #heading{
     color:darkkhaki;
     margin-left:-300px;
     font-size:20vh;
 }
+.well{
+    background-color: white;
+    border:none;
+    margin-left:500px;
+    box-shadow: none;
+}
+#my-content{
+    margin-top:100px;
+    margin-left:-100px;
+}
+}
+
+/* END */
+#about{
+        margin-top:10vh;
+    } 
+
+   
+
+
+
+
