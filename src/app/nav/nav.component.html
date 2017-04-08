@@ -1,6 +1,6 @@
 <div id="wrapper">
         <!-- Sidebar -->
-         <button *ngIf="check" class="btn btn-default" id="menu-toggle" (mouseenter)="toggle()">
+         <button *ngIf="check" class="btn btn-default" id="menu-toggle" (swiperight)="toggle()" (mouseenter)="toggle()">
           <i class="navicon fa fa-bars fa-2x" aria-hidden="true"></i></button>
         <div id="sidebar-wrapper" (swipeleft)="toggleLeave()" (mouseleave)="toggleLeave()">
             <ul class="sidebar-nav nav" >

@@ -1,5 +1,5 @@
 /*Images Setting Responsive Design Logic*/
-@media screen and (max-width: 320px){
+@media screen and (max-width: 480px){
       
     #my-Image{
         margin-top:22vh;
@@ -23,10 +23,7 @@
         margin:0;
     }
     .well{
-    background-color: white;
-    border:none;
     margin-top:43vh;
-    box-shadow: none;
 }
 }
 
@@ -91,7 +88,14 @@
 #about{
         margin-top:10vh;
     } 
-
+    .well{
+    background-color: white;
+    border: none;
+    box-shadow: none;
+    }
+#heading{
+        color:darkkhaki;
+}
    
 
 
